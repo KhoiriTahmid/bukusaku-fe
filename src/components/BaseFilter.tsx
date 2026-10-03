@@ -6,11 +6,6 @@ import Select from "antd/es/select";
 import Typography from "antd/es/typography";
 import styled from "styled-components";
 
-type FilterOption = {
-  value: string;
-  label: string;
-};
-
 export type IFilter = {
   type: "search" | "select";
   key: string;

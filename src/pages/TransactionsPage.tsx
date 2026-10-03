@@ -9,20 +9,11 @@ import {
   Input,
   InputNumber,
   Modal,
-  Popconfirm,
   Select,
-  Space,
-  Table,
   Tag,
-  Typography,
 } from "antd";
 import type { ColumnsType } from "antd/es/table";
-import {
-  DeleteOutlined,
-  EditOutlined,
-  MoreOutlined,
-  PlusOutlined,
-} from "@ant-design/icons";
+import { MoreOutlined } from "@ant-design/icons";
 import { useAuth } from "@/features/auth/AuthProvider";
 import {
   useCreateTransaction,

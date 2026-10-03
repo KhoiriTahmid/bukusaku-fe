@@ -19,7 +19,7 @@ import BaseFilter, { IFilter } from "@/components/BaseFilter";
 
 export default function UsersPage() {
   const { message } = App.useApp();
-  const { user: me, can } = useAuth();
+  const { can } = useAuth();
 
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);

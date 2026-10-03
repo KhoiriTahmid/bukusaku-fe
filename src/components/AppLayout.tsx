@@ -53,7 +53,7 @@ export default function AppLayout() {
 
   const [collapsed, setCollapsed] = useState(false);
 
-  const items = NAV.filter((n) => can(n.permission)).map(
+  const items = NAV.filter((n) => !n.permission || can(n.permission)).map(
     ({ permission, ...rest }) => rest,
   );
 

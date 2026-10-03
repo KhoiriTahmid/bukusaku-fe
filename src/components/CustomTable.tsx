@@ -89,7 +89,7 @@ function CustomPagination({
         <PageSizeSelect
           value={pagination.perPage}
           onChange={(value) => {
-            onChangeLimit?.(value);
+            onChangeLimit?.(Number(value));
           }}
           options={pageSizeOptions.map((size) => ({
             value: size,
